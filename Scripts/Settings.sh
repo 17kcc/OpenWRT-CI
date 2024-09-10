@@ -33,3 +33,27 @@ if [[ $WRT_TARGET == *"IPQ"* ]]; then
 	echo "CONFIG_ATH11K_MEM_PROFILE_1G=n" >> ./.config
 	echo "CONFIG_ATH11K_MEM_PROFILE_512M=y" >> ./.config
 fi
+# 想要剔除的
+echo "CONFIG_PACKAGE_htop=n" >> ./.config
+echo "CONFIG_PACKAGE_iperf3=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-wolplus=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-tailscale=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-advancedplus=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-theme-kucat=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-theme-design=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-theme-alpha=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-alpha-config=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-homeproxy=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-upnp=n" >> ./.config
+
+
+
+# 可以让FinalShell查看文件列表并且ssh连上不会自动断开
+echo "CONFIG_PACKAGE_openssh-sftp-server=y" >> ./.config
+# CPU 性能优化调节设置
+echo "CONFIG_PACKAGE_luci-app-cpufreq=y" >> ./.config
+# bbr加速+turboacc
+# echo "CONFIG_PACKAGE_luci-app-turboacc=y" >> ./.config
+# BBR 拥塞控制算法
+echo "CONFIG_PACKAGE_kmod-tcp-bbr=y" >> ./.config
+
