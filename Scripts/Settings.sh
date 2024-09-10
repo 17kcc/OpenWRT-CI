@@ -45,6 +45,8 @@ echo "CONFIG_PACKAGE_luci-theme-alpha=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-alpha-config=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-homeproxy=n" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-upnp=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-homeproxy=n" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-homeproxy=n" >> ./.config
 
 
 
